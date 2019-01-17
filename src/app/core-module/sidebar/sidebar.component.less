@@ -1,0 +1,39 @@
+@import '../../../assets/styles/variables.less';
+
+.sidebar{
+    width: 180px;
+    background: @blue;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+
+    .logo{
+        margin: 30px auto;
+        width: 120px;
+        display: block;
+    }
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+
+    li{
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+        color: @white;
+        padding: 10px;
+        border-bottom: 1px solid @white;
+    }
+
+    li:hover{
+        background: #10447d;
+        transition: linear 300ms;
+    }
+
+    li:active{
+        background: @cyan;
+    }
+}
+
